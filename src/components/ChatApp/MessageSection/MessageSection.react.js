@@ -1038,6 +1038,7 @@ class MessageSection extends Component {
       }
     }
     else{
+      debugger;
       this._scrollToBottom();
     }
   }
@@ -1045,7 +1046,8 @@ class MessageSection extends Component {
   _scrollToBottom = () => {
     let ul = this.scrollarea;
     if (ul && !this.state.showScrollBottom) {
-      ul.scrollTop(ul.getScrollHeight());
+      debugger;
+      ul.scrollToBottom();
     }
   }
 
